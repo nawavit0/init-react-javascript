@@ -1,11 +1,10 @@
 import { ConfigProvider } from 'antd'
-import { ThemeProvider } from 'styled-components'
-import theme from 'src/themes/theme'
+import { ThemeProvider } from 'src/contexts/theme'
 import Routes from 'src/routes'
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider>
       <ConfigProvider>
         <Routes />
       </ConfigProvider>

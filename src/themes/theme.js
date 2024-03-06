@@ -1,19 +1,23 @@
 const darktheme = {
-  primary: '#00bcd4',
-  secondary: '#f3f3f3',
-  border: '#e0e0e0',
-  text: '#fff',
-  background: '#212121',
-  indicator: '#FFCC00',
+  color: {
+    primary: '#00bcd4',
+    secondary: '#f3f3f3',
+    border: '#e0e0e0',
+    text: '#fff',
+    background: '#212121',
+    indicator: '#FFCC00',
+  },
 }
 
 const lightTheme = {
-  primary: '#003366',
-  secondary: '#eee',
-  border: '#878787',
-  text: '#000',
-  background: '#fff',
-  indicator: '#ccc',
+  color: {
+    primary: '#003366',
+    secondary: '#eee',
+    border: '#878787',
+    text: '#000',
+    background: '#fff',
+    indicator: '#ccc',
+  },
 }
 
 const defaultTheme = {
@@ -33,11 +37,11 @@ const defaultTheme = {
 
 const theme = {
   dark: {
-    color: darktheme,
+    ...darktheme,
     ...defaultTheme,
   },
   light: {
-    color: lightTheme,
+    ...lightTheme,
     ...defaultTheme,
   },
 }
